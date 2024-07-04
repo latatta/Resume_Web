@@ -1,26 +1,27 @@
 import logo from '../logo.svg';
 import '../css/App.css';
-import Navigation from "./components/EN/Navigation";
+import Navigation from "./components/Navigation";
 import About from "./components/EN/About";
 import Projects from "./components/EN/Projects";
 import Skills from "./components/EN/Skills";
 import Contact from "./components/EN/Contact";
 
+
 function App() {
   return (
-    <header>
-      <div class="app">
+    <div class="fullpage">
+      <header>
         <Navigation />
-        <main>
-          <div class="container">
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-          </div>
-        </main>
+      </header>
+      <div class="content">
+        <About />
+        <Projects />
+        <Skills />
       </div>
-    </header>
+      <footer>
+        <Contact />
+      </footer>
+    </div>
   );
 }
 
