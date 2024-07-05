@@ -1,5 +1,6 @@
 import logo from '../logo.svg';
 import '../css/App.css';
+import TypeIt from "typeit-react";
 import Navigation from "./components/Navigation";
 import About from "./components/EN/About";
 import Projects from "./components/EN/Projects";
@@ -14,6 +15,16 @@ function App() {
         <Navigation />
       </header>
       <div class="content">
+        <div className="typeit silkscreen">
+          <TypeIt options={{
+            strings: ["Hello, My name is Seeun Cheong.:)"],
+            speed: 100,
+            loop: false,
+            waitUntilVisible: true,
+            loop: true,
+            loopDelay: 5000
+          }} />
+        </div>
         <About />
         <Projects />
         <Skills />

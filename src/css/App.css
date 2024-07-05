@@ -60,6 +60,7 @@ ul {
 }
 
 /* About */
+
 .typeit {
     font-size: 30px;
     width: 400px;
@@ -69,10 +70,11 @@ ul {
 
 .profile {
     padding-left: 50px;
+    font-size: 20px;
 }
 
-.profile {
-    font-size: 20px;
+.profile_list {
+
 }
 
 .date {
