@@ -3,9 +3,9 @@ import { CgMenuHotdog } from "react-icons/cg";
 
 function Navigation() {
     return (
-        <section className="navigation silkscreen">
+        <section className="navigation">
             <div className="logo">
-                <a href="/"><img src={logo} id="logo" /></a>
+                <a href="/"><img src={logo} id="logo"/></a>
             </div>
             <nav>
                 <ul>

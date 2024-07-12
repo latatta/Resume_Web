@@ -15,19 +15,19 @@ function App() {
         <Navigation />
       </header>
       <div class="content">
-        <div className="typeit silkscreen">
+        <div className="typeit">
           <TypeIt options={{
             strings: ["Hello, My name is Seeun Cheong.:)"],
             speed: 100,
             loop: false,
             waitUntilVisible: true,
-            loop: true,
-            loopDelay: 5000
+            loop: false,
+            
           }} />
         </div>
         <About />
-        <Projects />
         <Skills />
+        <Projects />
       </div>
       <footer>
         <Contact />
