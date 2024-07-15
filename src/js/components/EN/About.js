@@ -6,11 +6,11 @@ import profileImg from '../../../assets/IMG_0480.jpg';
 
 function About() {
     return (
-        <section className="profile">
+        <section id="profile">
             <div className="About">
-                <h1>About</h1>
+                <h1>Profile</h1>
                 <div className="about_inner">
-                    <div className="profile_img"><img src={profileImg} alt="Dory" /></div>
+                    <div id="profile_img"><img src={profileImg} alt="Dory" /></div>
                     <div className="profile_list">
                         <ul>
                             <li><GoPerson /><span>: Seeun Cheong</span></li>
@@ -39,14 +39,14 @@ function About() {
                 </ul>
             </div>
             <div className="Certificate">
-                <h2>Certificate</h2>
+                <h1>Certificate</h1>
                 <ul>
                     <li><div className="date cert_list"><strong>2024.07</strong></div>
                         <div className="cert_list"><h4>Industrial Engineer Information Processing Certificate</h4></div></li>
                 </ul>
             </div>
             <div className="Experience">
-                <h2>Experience</h2>
+                <h1>Experience</h1>
                 <ul>
                     <li><div className="date list"><strong>2022.10 ~ 2022.12</strong></div>
                         <div className="exp_list"><h4>Bizcare</h4>

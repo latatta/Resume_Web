@@ -3,20 +3,16 @@ import { CgMenuHotdog } from "react-icons/cg";
 
 function Navigation() {
     return (
-        <section className="navigation">
-            <div className="logo">
-                <a href="/"><img src={logo} id="logo"/></a>
-            </div>
-            <nav>
+        <section id='navigation'>
+            <nav className='nav'>
+                <a href="#" id='logo'>Seeun&nbsp;Cheong</a>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#profile">Profile</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div className="menu"><CgMenuHotdog /></div>
         </section>
     )
 }

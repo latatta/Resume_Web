@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
-body {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 500;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif, 'Open Sans', sans-serif;
     background-color: rgb(27, 27, 27);
     color: white;
 }
 
-.jua-regular {
-    font-family: "Jua", sans-serif;
-    font-weight: 400;
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -26,10 +29,9 @@ ul {
 }
 
 .typeit {
-    font-size: 40px;
-    width: 500px;
-    margin: auto;
-    padding: 50px 0;
+    font-size: 80px;
+    height: 100vh;
+    margin-left: 30px;
     display: flex;
     align-items: center;
 }
@@ -42,43 +44,45 @@ ul {
     margin-top: 100px;
 }
 
-/* navigation */
-.navigation {
+.flexul {
     display: flex;
-    padding: 20px 30px;
+    
+}
+
+
+/* navigation */
+#logo {
+    padding: 0;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#header {
+    padding: 10px 30px;
     position: fixed;
     top: 0;
-    background-color: rgb(58, 122, 68);
+    background-color: none;
     width: 100vw;
     height: 60px;
-    align-items: center;
 }
 
-.logo img {
-    width: 120px;
-    height: 100%;
+.nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+.nav li {
+    float:left;
+    padding: 0 30px;
+    line-height: 60px;
+}
+
+.nav a {
+    display: block;
     float: left;
-}
-
-.navigation nav {
-    width: auto;
-}
-
-.navigation ul li {
-    font-size: 20px;
-    display: inline-block;
-    margin: 0 40px 0 0;
-    width: auto;
-}
-
-.menu {
-    position: fixed;
-    right: 2%;
-}
-
-.menu svg {
-    width: 50px;
-    height: 50px;
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0 20px;
 }
 
 /* About */
@@ -86,82 +90,11 @@ ul {
     display: flex;
 }
 
-.profile_list {
-    display: flex;
-    align-items: center;
-}
-
-.profile_img {
+#profile_img img {
     width: 300px;
     border-radius: 40%;
-    overflow: hidden;
-    margin: 0 50px;
 }
 
-.profile_img img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.profile {
-    padding-left: 50px;
-    font-size: 20px;
-}
-
-.profile_list li {
-    padding: 10px 0;
-}
-
-.date {
-    width: 180px;
-    vertical-align: top;
-}
-
-.edu_list, .cert_list {
-    display: inline-block;
-    margin-bottom: 30px;
-}
-
-.edu_list h4, .cert_list h4, .edu_list p, .cert_list p {
-    margin: 0 0 10px 0;
-}
-
-.Education ul li, .Certificate ul li, .Experience ul li {
-    display: flex;
-
-}
-
-.edu_list h4, .edu_list p, .exp_list h4, .exp_list p {
-    margin: 0;
-}
-
-/* skills */
-.basic_publish {
-    background-color: rgb(27,27,27);
-}
-
-#skills_inner p {
-    margin: 0;
-}
-
-#language {
-    width: 100%;
-    display: inline-block;
-}
-
-#language h4 {
-    vertical-align: middle;
-}
-
-#skills_inner ul {
-    display: flex;
-    width: 75%;
-}
-
-#skills_inner ul li img {
-    padding: 5px 20px;
-}
-
-#skills_inner ul li p {
-    text-align: center;
+.profile_list {
+    float: right;
 }

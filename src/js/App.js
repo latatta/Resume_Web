@@ -11,7 +11,7 @@ import Contact from "./components/EN/Contact";
 function App() {
   return (
     <div class="fullpage">
-      <header>
+      <header id='header'>
         <Navigation />
       </header>
       <div class="content">
@@ -22,7 +22,6 @@ function App() {
             loop: false,
             waitUntilVisible: true,
             loop: false,
-            
           }} />
         </div>
         <About />
